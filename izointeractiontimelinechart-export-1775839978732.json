@@ -1,0 +1,298 @@
+{
+  "app": [
+    {
+      "definition": {
+        "appV2": {
+          "id": "45cf4851-5ffd-480b-8338-25589e6b1af4",
+          "type": "module",
+          "name": "IZOInteractionTimeLineChart",
+          "slug": "45cf4851-5ffd-480b-8338-25589e6b1af4",
+          "isPublic": null,
+          "isMaintenanceOn": false,
+          "icon": "layers",
+          "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+          "currentVersionId": null,
+          "userId": "33b94c00-594b-41c0-9b85-7095b2717c70",
+          "workflowApiToken": null,
+          "workflowEnabled": false,
+          "isInitialisedFromPrompt": false,
+          "appGeneratedFromPrompt": false,
+          "appBuilderMode": "visual",
+          "aiGenerationMetadata": null,
+          "createdAt": "2026-04-08T05:31:14.350Z",
+          "creationMode": "DEFAULT",
+          "updatedAt": "2026-04-08T05:31:14.349Z",
+          "__loaded": true,
+          "editingVersion": {
+            "id": "ad359c26-fdaa-4be0-aa5d-eefca8a58107",
+            "name": "v1",
+            "definition": null,
+            "globalSettings": {
+              "appInMaintenance": false,
+              "canvasMaxWidth": 100,
+              "canvasMaxWidthType": "%",
+              "canvasMaxHeight": 2400,
+              "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+              "backgroundFxQuery": "",
+              "appMode": "light"
+            },
+            "pageSettings": null,
+            "showViewerNavigation": false,
+            "homePageId": "bb6e2b73-39b0-48b0-868d-21d776a7829d",
+            "appId": "45cf4851-5ffd-480b-8338-25589e6b1af4",
+            "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+            "promotedFrom": null,
+            "parentVersionId": null,
+            "status": "DRAFT",
+            "description": null,
+            "publishedAt": null,
+            "releasedAt": null,
+            "createdAt": "2026-04-08T05:31:14.596Z",
+            "updatedAt": "2026-04-08T05:31:14.349Z"
+          },
+          "components": [
+            {
+              "id": "d14ec904-46da-4697-8416-171302c0dd0f",
+              "name": "ModuleContainer",
+              "type": "ModuleContainer",
+              "pageId": "bb6e2b73-39b0-48b0-868d-21d776a7829d",
+              "parent": null,
+              "properties": {
+                "inputItems": {
+                  "value": [
+                    {
+                      "name": "chartData",
+                      "id": "a6058020-4858-463a-b52a-c7ca5441b6c2",
+                      "type": "data",
+                      "defaultValue": "{{{\n  \"title\": \"Interaction Timeline\",\n  \"subtitle\": \"Monthly preferred communication channel frequency.\",\n  \"rangeMonths\": 6,\n  \"lastInteractionDate\": \"07 June 2026\",\n  \"insight\": \"Dr. Maria had the highest engagement via Call in June with 12 interactions.  Dr. Maria had the highest engagement via Call in June with 12 interactions\",\n  \"events\": [\n    { \"type\": \"Email\", \"date\": \"2026-01\", \"count\": 4 },\n    { \"type\": \"Call\", \"date\": \"2026-02\", \"count\": 8 },\n    { \"type\": \"Email\", \"date\": \"2026-03\", \"count\": 2 },\n    { \"type\": \"In person\", \"date\": \"2026-04\", \"count\": 1 },\n    { \"type\": \"Call\", \"date\": \"2026-05\", \"count\": 5 },\n    { \"type\": \"Call\", \"date\": \"2026-06\", \"count\": 28 }\n  ]\n}}}",
+                      "testInputValue": ""
+                    }
+                  ]
+                },
+                "outputItems": {
+                  "value": []
+                },
+                "visibility": {
+                  "value": "{{true}}"
+                }
+              },
+              "general": {},
+              "styles": {
+                "backgroundColor": {
+                  "value": "#fff"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-08T05:31:14.349Z",
+              "updatedAt": "2026-04-08T08:37:42.903Z",
+              "layouts": [
+                {
+                  "id": "7d0300ac-1127-4d51-8a5c-7e688eae0185",
+                  "type": "mobile",
+                  "top": 50,
+                  "left": 3,
+                  "width": 38,
+                  "height": 400,
+                  "componentId": "d14ec904-46da-4697-8416-171302c0dd0f",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-08T05:31:15.421Z"
+                },
+                {
+                  "id": "4e8acbd8-50c7-4ac6-b1fe-802236002ad4",
+                  "type": "desktop",
+                  "top": 30,
+                  "left": 2,
+                  "width": 40,
+                  "height": 440,
+                  "componentId": "d14ec904-46da-4697-8416-171302c0dd0f",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-08T05:41:12.727Z"
+                }
+              ]
+            },
+            {
+              "id": "10e6f492-8fc5-44a5-b921-604b62d44478",
+              "name": "interaction-chart-container",
+              "type": "CustomComponent",
+              "pageId": "bb6e2b73-39b0-48b0-868d-21d776a7829d",
+              "parent": "d14ec904-46da-4697-8416-171302c0dd0f",
+              "properties": {
+                "visible": {
+                  "value": "{{true}}"
+                },
+                "data": {
+                  "value": "{{input.chartData}}"
+                },
+                "code": {
+                  "value": "import React, { useEffect, useState, useRef } from 'https://esm.sh/react@18.2.0';\nimport ReactDOM from 'https://esm.sh/react-dom@18.2.0/client';\nimport * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.8.5/+esm';\n\nconst TRACK_BG = '#F8FAFC';\n\nfunction IZOInteractionTimeline(props) {\n  const [isLoaded, setIsLoaded] = useState(false);\n  const svgRef = useRef(null);\n\n  useEffect(() => {\n    const styleId = 'izo-timeline-donut-aligned-v2';\n    if (!document.getElementById(styleId)) {\n      const style = document.createElement('style');\n      style.id = styleId;\n      style.innerHTML = `\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');\n        html, body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: white; }\n        \n        .main-wrapper { padding: 32px; position: relative; }\n\n        .header-section { margin-bottom: 12px; }\n        .timeline-header-title { font-size: 16px; font-weight: 500; color: #252726; margin: 0; margin-bottom: 8px; }\n        .timeline-header-sub { font-size: 14px; color: #252726; font-weight: 400; }\n\n        .izo-tooltip {\n          position: absolute; padding: 8px 12px; background: #1e293b; color: #ffffff;\n          border-radius: 6px; font-size: 12px; pointer-events: none; opacity: 0;\n          z-index: 100; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3); line-height: 1.5;\n        }\n        .tooltip-row { display: block; }\n        .tooltip-value { font-weight: 700; }\n\n        .footer-section { margin-top: 12px; display: flex; flex-direction: column; gap: 16px; }\n        .footer-date-label { font-size: 14px; color: #252726; font-weight: 400; }\n        .footer-date-value { font-size: 14px; color: #7C858C; font-weight: 600; margin-left: 8px; }\n\n        /* Updated Insight Pill */\n        .insight-pill { display: flex; align-items: center; gap: 10px; }\n        .insight-icon-container { \n          width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;\n          background-color: #F8FAFC; border: 1px solid #F1F5F9; border-radius: 9999px; \n        }\n        .insight-text { font-size: 14px; color: #252726; font-weight: 500; }\n\n        .interaction-type-head { font-size: 11px; font-weight: 600; fill: #252726; text-transform: capitalize; }\n        .y-label { font-size: 12px; font-weight: 500; fill: #475569; }\n        .x-label { font-size: 11px; font-weight: 500; fill: #94A3B8; }\n        .header-divider { stroke: #E2E8F0; stroke-width: 1; }\n        .pill-count { font-size: 11px; font-weight: 700; fill: #1e293b; text-anchor: middle; dominant-baseline: central; pointer-events: none; }\n      `;\n      document.head.appendChild(style);\n    }\n    setIsLoaded(true);\n  }, []);\n\n  useEffect(() => {\n    if (!isLoaded || !props.data || !props.data.events) return;\n\n    const categories = ['Email', 'Call', 'In person'];\n    const margin = { top: 40, right: 10, bottom: 10, left: 120 };\n    const width = 850 - margin.left - margin.right;\n    const rowHeight = 44; \n    const height = categories.length * rowHeight;\n\n    const container = d3.select(\".main-wrapper\");\n    let tooltip = container.select(\".izo-tooltip\");\n    if (tooltip.empty()) { tooltip = container.append(\"div\").attr(\"class\", \"izo-tooltip\"); }\n\n    const svg = d3.select(svgRef.current);\n    svg.selectAll(\"*\").remove();\n\n    const g = svg\n      .attr(\"viewBox\", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)\n      .append(\"g\")\n      .attr(\"transform\", `translate(${margin.left},${margin.top})`);\n\n    const rangeMonths = parseInt(props.data.rangeMonths) || 6;\n    const eventDates = props.data.events.map(d => new Date(d.date + \"-02\"));\n    const baseDate = eventDates.length > 0 ? d3.min(eventDates) : new Date();\n    const startDate = d3.timeMonth.floor(baseDate);\n    const endDate = d3.timeMonth.offset(startDate, rangeMonths);\n\n    const x = d3.scaleTime().domain([startDate, endDate]).range([0, width]);\n    const y = d3.scaleBand().domain(categories).range([0, height]).paddingInner(0.35);\n\n    // Headers\n    g.append(\"text\").attr(\"class\", \"interaction-type-head\").attr(\"x\", -margin.left).attr(\"y\", -20).text(\"Interaction Type\");\n    const months = d3.timeMonth.range(startDate, d3.timeMonth.offset(endDate, 1));\n    g.selectAll(\".header-divider\").data(months).enter().append(\"line\")\n      .attr(\"class\", \"header-divider\").attr(\"x1\", d => x(d)).attr(\"x2\", d => x(d)).attr(\"y1\", -30).attr(\"y2\", -10);\n\n    // Tracks\n    g.selectAll(\".track\").data(categories).enter().append(\"rect\")\n      .attr(\"x\", 0).attr(\"y\", d => y(d)).attr(\"width\", width).attr(\"height\", y.bandwidth()).attr(\"rx\", 6).attr(\"fill\", TRACK_BG);\n\n    // Labels\n    g.selectAll(\".y-label\").data(categories).enter().append(\"text\")\n      .attr(\"class\", \"y-label\").attr(\"x\", -margin.left).attr(\"y\", d => y(d) + y.bandwidth()/2)\n      .attr(\"alignment-baseline\", \"middle\").text(d => d);\n\n    g.selectAll(\".x-label\").data(months.slice(0, -1)).enter().append(\"text\")\n      .attr(\"class\", \"x-label\").attr(\"x\", (d, i) => (x(d) + x(months[i+1])) / 2)\n      .attr(\"y\", -20).attr(\"text-anchor\", \"middle\").text(d => d3.timeFormat(\"%b %Y\")(d));\n\n    // Interaction Pills\n    const columnWidth = width / rangeMonths;\n    const maxCount = d3.max(props.data.events, d => d.count) || 1;\n    const sizeScale = d3.scaleLinear().domain([0, maxCount]).range([32, columnWidth * 0.85]);\n    const colorMap = { 'Email': '#29D1F1', 'Call': '#86EFAC', 'In person': '#BEF264' };\n\n    const pillGroups = g.selectAll(\".pill-group\").data(props.data.events).enter().append(\"g\")\n      .attr(\"transform\", d => {\n        const mStart = x(d3.timeMonth.floor(new Date(d.date + \"-02\")));\n        const pWidth = sizeScale(d.count);\n        return `translate(${mStart + (columnWidth/2) - (pWidth/2)}, ${y(d.type)})`;\n      });\n\n    pillGroups.append(\"rect\")\n      .attr(\"width\", d => sizeScale(d.count)).attr(\"height\", y.bandwidth()).attr(\"rx\", 6)\n      .attr(\"fill\", d => colorMap[d.type] || '#CBD5E1').style(\"cursor\", \"pointer\")\n      .on(\"mouseover\", function(event, d) {\n        d3.select(this).attr(\"opacity\", 0.85);\n        tooltip.style(\"opacity\", 1).html(`\n            <span class=\"tooltip-row\">${d.type}: <span class=\"tooltip-value\">${d.count}</span></span>\n            <span class=\"tooltip-row\">${d3.timeFormat(\"%B %Y\")(new Date(d.date + \"-02\"))}</span>\n        `);\n      })\n      .on(\"mousemove\", function(event) {\n        const [mx, my] = d3.pointer(event, document.body);\n        tooltip.style(\"left\", (mx + 15) + \"px\").style(\"top\", (my - 50) + \"px\");\n      })\n      .on(\"mouseout\", function() {\n        d3.select(this).attr(\"opacity\", 1);\n        tooltip.style(\"opacity\", 0);\n      });\n\n    pillGroups.append(\"text\")\n      .attr(\"x\", d => sizeScale(d.count) / 2).attr(\"y\", y.bandwidth() / 2)\n      .attr(\"class\", \"pill-count\").text(d => d.count);\n\n  }, [isLoaded, props.data]);\n\n  return React.createElement('div', { className: \"main-wrapper\" },\n    React.createElement('div', { className: \"header-section\" },\n      React.createElement('h3', { className: \"timeline-header-title\" }, props.data?.title || \"Interaction Timeline\"),\n      React.createElement('p', { className: \"timeline-header-sub\" }, props.data?.subtitle)\n    ),\n    React.createElement('svg', { ref: svgRef, style: { width: '100%', height: 'auto' } }),\n    React.createElement('div', { className: \"footer-section\" },\n      React.createElement('div', { className: \"footer-date-label\" },\n        \"Last Interaction date\",\n        React.createElement('span', { className: \"footer-date-value\" }, props.data?.lastInteractionDate)\n      ),\n      React.createElement('div', { className: \"insight-pill\" },\n        React.createElement('div', { className: \"insight-icon-container\" }, \n          React.createElement('svg', { viewBox: \"0 0 24 24\", fill: \"#3B82F6\" },\n            React.createElement('path', { d: \"M12 3L14.5 9.5L21 12L14.5 14.5L12 21L9.5 14.5L3 12L9.5 9.5L12 3Z\" })\n          )\n        ),\n        React.createElement('div', { className: \"insight-text\" }, props.data?.insight)\n      )\n    )\n  );\n}\n\nconst ConnectedComponent = Tooljet.connectComponent(IZOInteractionTimeline);\nif (!window.tooljetRoot) window.tooljetRoot = ReactDOM.createRoot(document.body);\nwindow.tooljetRoot.render(React.createElement(ConnectedComponent));",
+                  "skipResolve": true
+                }
+              },
+              "general": {},
+              "styles": {
+                "visibility": {
+                  "value": "{{true}}"
+                },
+                "borderRadius": {
+                  "value": "{{6}}"
+                },
+                "borderColor": {
+                  "value": "var(--cc-weak-border)"
+                },
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{false}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-08T05:32:39.794Z",
+              "updatedAt": "2026-04-08T05:36:40.120Z",
+              "layouts": [
+                {
+                  "id": "5d50893d-e385-49c8-b9cb-f658aafbf61e",
+                  "type": "mobile",
+                  "top": 70,
+                  "left": 1,
+                  "width": 22,
+                  "height": 140,
+                  "componentId": "10e6f492-8fc5-44a5-b921-604b62d44478",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-08T05:32:39.794Z"
+                },
+                {
+                  "id": "392d7ba4-eb27-4ff2-ac0c-f7f9579d4c78",
+                  "type": "desktop",
+                  "top": 0,
+                  "left": 0,
+                  "width": 43,
+                  "height": 430,
+                  "componentId": "10e6f492-8fc5-44a5-b921-604b62d44478",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-08T05:41:17.856Z"
+                }
+              ]
+            }
+          ],
+          "pages": [
+            {
+              "id": "bb6e2b73-39b0-48b0-868d-21d776a7829d",
+              "name": "Home",
+              "handle": "home",
+              "index": 1,
+              "disabled": null,
+              "hidden": null,
+              "icon": null,
+              "createdAt": "2026-04-08T05:31:14.349Z",
+              "updatedAt": "2026-04-08T05:31:15.448Z",
+              "autoComputeLayout": true,
+              "appVersionId": "ad359c26-fdaa-4be0-aa5d-eefca8a58107",
+              "pageGroupIndex": 1,
+              "pageGroupId": null,
+              "isPageGroup": false,
+              "url": null,
+              "openIn": "new_tab",
+              "type": "default",
+              "appId": ""
+            }
+          ],
+          "events": [],
+          "dataQueries": [],
+          "dataSources": [],
+          "appVersions": [
+            {
+              "id": "ad359c26-fdaa-4be0-aa5d-eefca8a58107",
+              "name": "v1",
+              "definition": null,
+              "globalSettings": {
+                "appInMaintenance": false,
+                "canvasMaxWidth": 100,
+                "canvasMaxWidthType": "%",
+                "canvasMaxHeight": 2400,
+                "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+                "backgroundFxQuery": "",
+                "appMode": "light"
+              },
+              "pageSettings": null,
+              "showViewerNavigation": false,
+              "homePageId": "bb6e2b73-39b0-48b0-868d-21d776a7829d",
+              "appId": "45cf4851-5ffd-480b-8338-25589e6b1af4",
+              "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "promotedFrom": null,
+              "parentVersionId": null,
+              "status": "DRAFT",
+              "description": null,
+              "publishedAt": null,
+              "releasedAt": null,
+              "createdAt": "2026-04-08T05:31:14.596Z",
+              "updatedAt": "2026-04-08T05:31:14.349Z"
+            }
+          ],
+          "appEnvironments": [
+            {
+              "id": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "development",
+              "isDefault": false,
+              "priority": 1,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.458Z",
+              "updatedAt": "2026-02-26T12:08:00.458Z"
+            },
+            {
+              "id": "0e3b990c-f866-4eed-9a29-550e8d0f0f91",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "staging",
+              "isDefault": false,
+              "priority": 2,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.460Z",
+              "updatedAt": "2026-02-26T12:08:00.460Z"
+            },
+            {
+              "id": "081b74ee-41da-45db-9dd7-01dc882dbec9",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "production",
+              "isDefault": true,
+              "priority": 3,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.462Z",
+              "updatedAt": "2026-02-26T12:08:00.462Z"
+            }
+          ],
+          "dataSourceOptions": [],
+          "schemaDetails": {
+            "multiPages": true,
+            "multiEnv": true,
+            "globalDataSources": true
+          }
+        }
+      }
+    }
+  ],
+  "tooljet_version": "3.20.140-ee-lts"
+}

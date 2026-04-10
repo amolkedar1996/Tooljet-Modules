@@ -1,0 +1,298 @@
+{
+  "app": [
+    {
+      "definition": {
+        "appV2": {
+          "id": "a7ffbc59-c0a1-4d58-a105-9ab1c3c3fc85",
+          "type": "module",
+          "name": "IZOHorizontalBarChart",
+          "slug": "a7ffbc59-c0a1-4d58-a105-9ab1c3c3fc85",
+          "isPublic": null,
+          "isMaintenanceOn": false,
+          "icon": "shield",
+          "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+          "currentVersionId": null,
+          "userId": "b791d519-ed01-4ab0-a521-77404c914af7",
+          "workflowApiToken": null,
+          "workflowEnabled": false,
+          "isInitialisedFromPrompt": false,
+          "appGeneratedFromPrompt": false,
+          "appBuilderMode": "visual",
+          "aiGenerationMetadata": null,
+          "createdAt": "2026-04-02T04:47:38.230Z",
+          "creationMode": "DEFAULT",
+          "updatedAt": "2026-04-04T19:37:12.593Z",
+          "__loaded": true,
+          "editingVersion": {
+            "id": "a575c327-be28-4f09-85eb-27785b1e89a8",
+            "name": "v1",
+            "definition": null,
+            "globalSettings": {
+              "appInMaintenance": false,
+              "canvasMaxWidth": 100,
+              "canvasMaxWidthType": "%",
+              "canvasMaxHeight": 2400,
+              "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+              "backgroundFxQuery": "",
+              "appMode": "light"
+            },
+            "pageSettings": null,
+            "showViewerNavigation": false,
+            "homePageId": "160992e2-844f-4263-9a80-40746b1cd4f6",
+            "appId": "a7ffbc59-c0a1-4d58-a105-9ab1c3c3fc85",
+            "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+            "promotedFrom": null,
+            "parentVersionId": null,
+            "status": "DRAFT",
+            "description": null,
+            "publishedAt": null,
+            "releasedAt": null,
+            "createdAt": "2026-04-02T04:47:38.501Z",
+            "updatedAt": "2026-04-02T04:47:38.209Z"
+          },
+          "components": [
+            {
+              "id": "c12ae915-6ec3-4b89-9b96-ed8ef1e698c6",
+              "name": "ModuleContainer",
+              "type": "ModuleContainer",
+              "pageId": "160992e2-844f-4263-9a80-40746b1cd4f6",
+              "parent": null,
+              "properties": {
+                "inputItems": {
+                  "value": [
+                    {
+                      "name": "chartData",
+                      "id": "8988cefc-2b61-4a93-b697-b187c2632592",
+                      "type": "data",
+                      "defaultValue": "{{{\n  \"title\": \"Content Affinity\",\n  \"subtitle\": \"High-impact topics for future engagement\",\n  \"data\": [\n    { \"name\": \"RWE\", \"count\": 186 },\n    { \"name\": \"Safety\", \"count\": 305 },\n    { \"name\": \"MOA\", \"count\": 237 },\n    { \"name\": \"Clinical Trials\", \"count\": 73 },\n    { \"name\": \"Efficacy\", \"count\": 209 }\n  ]\n}}}",
+                      "testInputValue": ""
+                    }
+                  ]
+                },
+                "outputItems": {
+                  "value": []
+                },
+                "visibility": {
+                  "value": "{{true}}"
+                }
+              },
+              "general": {},
+              "styles": {
+                "backgroundColor": {
+                  "value": "#fff"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-02T04:47:38.209Z",
+              "updatedAt": "2026-04-08T07:31:33.100Z",
+              "layouts": [
+                {
+                  "id": "df88c1ee-3934-4929-a0e5-bf1113d50ff9",
+                  "type": "desktop",
+                  "top": 50,
+                  "left": 3,
+                  "width": 21,
+                  "height": 330,
+                  "componentId": "c12ae915-6ec3-4b89-9b96-ed8ef1e698c6",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T21:35:40.617Z"
+                },
+                {
+                  "id": "ad786360-a73e-480f-b5c0-580d3fdf07ed",
+                  "type": "mobile",
+                  "top": 50,
+                  "left": 3,
+                  "width": 38,
+                  "height": 400,
+                  "componentId": "c12ae915-6ec3-4b89-9b96-ed8ef1e698c6",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-02T04:47:38.209Z"
+                }
+              ]
+            },
+            {
+              "id": "f90c1215-59e8-4721-a5a0-ff23117feab7",
+              "name": "horizontal-bar-container",
+              "type": "CustomComponent",
+              "pageId": "160992e2-844f-4263-9a80-40746b1cd4f6",
+              "parent": "c12ae915-6ec3-4b89-9b96-ed8ef1e698c6",
+              "properties": {
+                "visible": {
+                  "value": "{{true}}"
+                },
+                "data": {
+                  "value": "{{input.chartData}}"
+                },
+                "code": {
+                  "value": "import React, { useEffect, useState, useMemo } from 'https://esm.sh/react@18.2.0';\nimport ReactDOM from 'https://esm.sh/react-dom@18.2.0/client';\n\nfunction IZOHorizontalBarChart(props) {\n  const [isLoaded, setIsLoaded] = useState(false);\n  const [tooltip, setTooltip] = useState({ show: false, x: 0, y: 0, name: '', count: 0 });\n\n  useEffect(() => {\n    const styleId = 'izo-inner-scroll-fix';\n    if (!document.getElementById(styleId)) {\n      const style = document.createElement('style');\n      style.id = styleId;\n      style.innerHTML = `\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');\n        html, body, #root { \n          height: 100% !important; \n          margin: 0; padding: 0; \n          overflow: hidden !important; \n          font-family: 'Inter', sans-serif; \n          background: white;\n        }\n        .inner-scroll::-webkit-scrollbar { width: 4px; }\n        .inner-scroll::-webkit-scrollbar-track { background: transparent; }\n        .inner-scroll::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 10px; }\n        .izo-tooltip {\n          position: fixed;\n          pointer-events: none;\n          background: #1f2937;\n          color: white;\n          padding: 8px 12px;\n          border-radius: 6px;\n          font-size: 12px;\n          z-index: 9999;\n          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);\n          transform: translate(-50%, -120%);\n          transition: opacity 0.1s ease;\n          white-space: nowrap;\n        }\n      `;\n      document.head.appendChild(style);\n    }\n\n    if (!document.getElementById('tailwind-v4')) {\n      const script = document.createElement('script');\n      script.id = 'tailwind-v4';\n      script.src = 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4';\n      script.onload = () => setIsLoaded(true);\n      document.head.appendChild(script);\n    } else {\n      setIsLoaded(true);\n    }\n  }, []);\n\n  const resolved = useMemo(() => {\n    const raw = props.data || {};\n    const list = raw.data || [\n      { name: \"RWE\", count: 186 },\n      { name: \"Safety\", count: 305 },\n      { name: \"MOA\", count: 237 },\n      { name: \"Clinical Trials\", count: 73 },\n      { name: \"Efficacy\", count: 209 },\n      { name: \"Adherence\", count: 110 },\n      { name: \"Digital Health\", count: 95 }\n    ];\n    const max = list.length > 0 ? Math.max(...list.map(i => i.count)) : 0;\n    const defaultColors = [\"#0B5E2A\", \"#2E8B57\", \"#4FA66A\", \"#A3DEC0\", \"#CEF1E0\"];\n    const colors = (raw.colors && Array.isArray(raw.colors)) ? raw.colors : defaultColors;\n    \n    return { title: raw.title || \"Content Affinity\", subtitle: raw.subtitle || \"High-impact topics\", items: list, maxValue: max, colors: colors };\n  }, [props.data]);\n\n  const handleShowTooltip = (e, item) => {\n    setTooltip({ show: true, x: e.clientX, y: e.clientY, name: item.name, count: item.count });\n  };\n  const handleHideTooltip = () => setTooltip(prev => ({ ...prev, show: false }));\n\n  if (!isLoaded) return null;\n  const { title, subtitle, items, maxValue, colors } = resolved;\n\n  return React.createElement(\n    'div',\n    { className: \"flex flex-col h-full w-full p-8 bg-white overflow-hidden\" },\n\n    tooltip.show && React.createElement(\n      'div',\n      { className: \"izo-tooltip\", style: { left: tooltip.x, top: tooltip.y } },\n      React.createElement('div', { className: \"font-semibold\" }, tooltip.name)\n    ),\n\n    React.createElement('div', { className: \"mb-6 shrink-0\" },\n      React.createElement('h3', { className: \"text-[16px] font-medium text-[#252726] mb-1\" }, title),\n      React.createElement('p', { className: \"text-[14px] font-regular text-[#252726] opacity-80\" }, subtitle)\n    ),\n\n    React.createElement('div', { className: \"inner-scroll flex-1 flex flex-col gap-4 overflow-y-auto min-h-0 pr-2\" },\n      items.map((item, index) => {\n        const percentage = maxValue > 0 ? (item.count / maxValue) * 100 : 0;\n\n        return React.createElement('div', { key: index, className: \"group flex items-center gap-0 cursor-pointer shrink-0\", onClick: () => props.updateData({ selected: item.name }) },\n          \n          // Tooltip on LABEL\n          React.createElement('div', { \n            className: \"w-28 text-[14px] font-bold text-[#737373] transition-colors group-hover:text-[#252726] truncate pr-2\",\n            onMouseEnter: (e) => handleShowTooltip(e, item),\n            onMouseMove: (e) => handleShowTooltip(e, item),\n            onMouseLeave: handleHideTooltip\n          }, item.name),\n\n          // Tooltip on BAR\n          React.createElement('div', { \n            className: \"flex-1 h-3.5 relative\",\n            onMouseEnter: (e) => handleShowTooltip(e, item),\n            onMouseMove: (e) => handleShowTooltip(e, item),\n            onMouseLeave: handleHideTooltip\n          },\n            React.createElement('div', {\n              className: \"h-full rounded-full transition-all duration-1000 ease-out\",\n              style: { width: percentage + \"%\", backgroundColor: colors[index % colors.length] }\n            })\n          ),\n\n          // NO Tooltip on COUNT\n          React.createElement('span', { className: \"text-[14px] font-medium text-[#737373] w-10 text-right tabular-nums\" }, item.count)\n        );\n      })\n    )\n  );\n}\n\nconst ConnectedComponent = Tooljet.connectComponent(IZOHorizontalBarChart);\nif (!window.tooljetRoot) { window.tooljetRoot = ReactDOM.createRoot(document.body); }\nwindow.tooljetRoot.render(React.createElement(ConnectedComponent));",
+                  "skipResolve": true
+                }
+              },
+              "general": {},
+              "styles": {
+                "visibility": {
+                  "value": "{{true}}"
+                },
+                "borderRadius": {
+                  "value": "{{6}}"
+                },
+                "borderColor": {
+                  "value": "var(--cc-weak-border)"
+                },
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-02T04:47:51.611Z",
+              "updatedAt": "2026-04-04T21:50:47.650Z",
+              "layouts": [
+                {
+                  "id": "983f2dc1-6a90-49a4-bfb6-d0e2b8132bdc",
+                  "type": "desktop",
+                  "top": 0,
+                  "left": 1,
+                  "width": 41,
+                  "height": 320,
+                  "componentId": "f90c1215-59e8-4721-a5a0-ff23117feab7",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T21:35:21.706Z"
+                },
+                {
+                  "id": "aeb48e70-6cb5-4f0a-968b-25fcaf22ad88",
+                  "type": "mobile",
+                  "top": 70,
+                  "left": 5,
+                  "width": 23,
+                  "height": 140,
+                  "componentId": "f90c1215-59e8-4721-a5a0-ff23117feab7",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-02T04:47:51.611Z"
+                }
+              ]
+            }
+          ],
+          "pages": [
+            {
+              "id": "160992e2-844f-4263-9a80-40746b1cd4f6",
+              "name": "Home",
+              "handle": "home",
+              "index": 1,
+              "disabled": null,
+              "hidden": null,
+              "icon": null,
+              "createdAt": "2026-04-02T04:47:38.209Z",
+              "updatedAt": "2026-04-02T04:47:39.324Z",
+              "autoComputeLayout": true,
+              "appVersionId": "a575c327-be28-4f09-85eb-27785b1e89a8",
+              "pageGroupIndex": 1,
+              "pageGroupId": null,
+              "isPageGroup": false,
+              "url": null,
+              "openIn": "new_tab",
+              "type": "default",
+              "appId": ""
+            }
+          ],
+          "events": [],
+          "dataQueries": [],
+          "dataSources": [],
+          "appVersions": [
+            {
+              "id": "a575c327-be28-4f09-85eb-27785b1e89a8",
+              "name": "v1",
+              "definition": null,
+              "globalSettings": {
+                "appInMaintenance": false,
+                "canvasMaxWidth": 100,
+                "canvasMaxWidthType": "%",
+                "canvasMaxHeight": 2400,
+                "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+                "backgroundFxQuery": "",
+                "appMode": "light"
+              },
+              "pageSettings": null,
+              "showViewerNavigation": false,
+              "homePageId": "160992e2-844f-4263-9a80-40746b1cd4f6",
+              "appId": "a7ffbc59-c0a1-4d58-a105-9ab1c3c3fc85",
+              "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "promotedFrom": null,
+              "parentVersionId": null,
+              "status": "DRAFT",
+              "description": null,
+              "publishedAt": null,
+              "releasedAt": null,
+              "createdAt": "2026-04-02T04:47:38.501Z",
+              "updatedAt": "2026-04-02T04:47:38.209Z"
+            }
+          ],
+          "appEnvironments": [
+            {
+              "id": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "development",
+              "isDefault": false,
+              "priority": 1,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.458Z",
+              "updatedAt": "2026-02-26T12:08:00.458Z"
+            },
+            {
+              "id": "0e3b990c-f866-4eed-9a29-550e8d0f0f91",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "staging",
+              "isDefault": false,
+              "priority": 2,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.460Z",
+              "updatedAt": "2026-02-26T12:08:00.460Z"
+            },
+            {
+              "id": "081b74ee-41da-45db-9dd7-01dc882dbec9",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "production",
+              "isDefault": true,
+              "priority": 3,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.462Z",
+              "updatedAt": "2026-02-26T12:08:00.462Z"
+            }
+          ],
+          "dataSourceOptions": [],
+          "schemaDetails": {
+            "multiPages": true,
+            "multiEnv": true,
+            "globalDataSources": true
+          }
+        }
+      }
+    }
+  ],
+  "tooljet_version": "3.20.140-ee-lts"
+}

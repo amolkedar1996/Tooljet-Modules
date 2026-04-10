@@ -1,0 +1,305 @@
+{
+  "app": [
+    {
+      "definition": {
+        "appV2": {
+          "id": "d5062a15-9ffd-4edf-992d-518333c51dc8",
+          "type": "module",
+          "name": "IZOVerticalBarChart",
+          "slug": "d5062a15-9ffd-4edf-992d-518333c51dc8",
+          "isPublic": null,
+          "isMaintenanceOn": false,
+          "icon": "shield",
+          "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+          "currentVersionId": null,
+          "userId": "33b94c00-594b-41c0-9b85-7095b2717c70",
+          "workflowApiToken": null,
+          "workflowEnabled": false,
+          "isInitialisedFromPrompt": false,
+          "appGeneratedFromPrompt": false,
+          "appBuilderMode": "visual",
+          "aiGenerationMetadata": null,
+          "createdAt": "2026-04-04T16:27:25.765Z",
+          "creationMode": "DEFAULT",
+          "updatedAt": "2026-04-04T16:27:25.763Z",
+          "__loaded": true,
+          "editingVersion": {
+            "id": "5dd5c7d2-b337-41d1-baef-4445acdc024b",
+            "name": "v1",
+            "definition": null,
+            "globalSettings": {
+              "appInMaintenance": false,
+              "canvasMaxWidth": 100,
+              "canvasMaxWidthType": "%",
+              "canvasMaxHeight": 2400,
+              "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+              "backgroundFxQuery": "",
+              "appMode": "light"
+            },
+            "pageSettings": null,
+            "showViewerNavigation": false,
+            "homePageId": "822f59a4-1fd5-4193-b554-f27733ffcf4b",
+            "appId": "d5062a15-9ffd-4edf-992d-518333c51dc8",
+            "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+            "promotedFrom": null,
+            "parentVersionId": null,
+            "status": "DRAFT",
+            "description": null,
+            "publishedAt": null,
+            "releasedAt": null,
+            "createdAt": "2026-04-04T16:27:25.893Z",
+            "updatedAt": "2026-04-04T16:27:25.763Z"
+          },
+          "components": [
+            {
+              "id": "51192fc0-5d83-425f-b561-2869ae0c34d6",
+              "name": "ModuleContainer",
+              "type": "ModuleContainer",
+              "pageId": "822f59a4-1fd5-4193-b554-f27733ffcf4b",
+              "parent": null,
+              "properties": {
+                "inputItems": {
+                  "value": [
+                    {
+                      "name": "chartData",
+                      "id": "9598da3f-4404-41ac-be42-839180b65095",
+                      "type": "data",
+                      "defaultValue": "{{\n  {\n    \"data\": [\n      { \"week\": \"W1\", \"active\": 70, \"accepted\": 35,},\n      { \"week\": \"W2\", \"active\": 60, \"accepted\": 52 },\n      { \"week\": \"W3\", \"active\": 59, \"accepted\": 48 },\n      { \"week\": \"W4\", \"active\": 42, \"accepted\": 19 },\n      { \"week\": \"W5\", \"active\": 18, \"accepted\": 15 },\n      { \"week\": \"W6\", \"active\": 13, \"accepted\": 10 }\n    ],\n    \"categoryKey\": \"week\",\n    \"series\": [\n      { \"key\": \"active\" },\n      { \"key\": \"accepted\" }\n    ],\n    \"config\": {\n      \"active\": { \"label\": \"Active\", \"color\": \"#F28B8B\" },\n      \"accepted\": { \"label\": \"Accepted\", \"color\": \"#8FD19E\" }\n    },\n     \"title\": \"NBA Trend (Weekly)\",\n      \"subtitle\": \"Weekly view of recommendation volume and action patterns.\",\n       \"barSize\":\"40\",\n       \"barGap\":\"5\",\n       \"chartHeight\":341\n  }\n}}",
+                      "testInputValue": ""
+                    },
+                    {
+                      "name": "input1",
+                      "id": "54af9e00-0816-42bb-9b22-13327099edb1",
+                      "type": "data",
+                      "defaultValue": "",
+                      "testInputValue": ""
+                    }
+                  ]
+                },
+                "outputItems": {
+                  "value": []
+                },
+                "visibility": {
+                  "value": "{{true}}"
+                }
+              },
+              "general": {},
+              "styles": {
+                "backgroundColor": {
+                  "value": "#fff"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-04T16:27:25.763Z",
+              "updatedAt": "2026-04-08T07:46:54.689Z",
+              "layouts": [
+                {
+                  "id": "ce9b2d8b-076c-49d2-872a-51e560c2b80b",
+                  "type": "mobile",
+                  "top": 0,
+                  "left": 0,
+                  "width": 43,
+                  "height": 480,
+                  "componentId": "51192fc0-5d83-425f-b561-2869ae0c34d6",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T19:12:27.685Z"
+                },
+                {
+                  "id": "87d4a427-62ce-4199-bd27-c172a6ab1440",
+                  "type": "desktop",
+                  "top": 30,
+                  "left": 1,
+                  "width": 41,
+                  "height": 480,
+                  "componentId": "51192fc0-5d83-425f-b561-2869ae0c34d6",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T18:52:48.633Z"
+                }
+              ]
+            },
+            {
+              "id": "e1eeedad-ea2f-472a-8f39-e89f7fdb8e2d",
+              "name": "vertical-bar-chart",
+              "type": "CustomComponent",
+              "pageId": "822f59a4-1fd5-4193-b554-f27733ffcf4b",
+              "parent": "51192fc0-5d83-425f-b561-2869ae0c34d6",
+              "properties": {
+                "visible": {
+                  "value": "{{true}}"
+                },
+                "data": {
+                  "value": "{{input.chartData}}"
+                },
+                "code": {
+                  "value": "import React, { useEffect, useState, useMemo } from 'https://esm.sh/react@18.2.0';\nimport ReactDOM from 'https://esm.sh/react-dom@18.2.0/client';\nimport * as Recharts from 'https://esm.sh/recharts@2.12.7?deps=react@18.2.0';\n\n// Custom Tooltip\nconst CustomTooltip = ({ active, payload, label, config }) => {\n  if (active && payload && payload.length) {\n    return React.createElement(\n      'div',\n      { \n        className: \"bg-white p-2 border border-[#EEF2F7] rounded-lg min-w-[120px]\",\n        style: { fontFamily: '\"Inter\", sans-serif' }\n      },\n      React.createElement('div', { className: \"mb-1\" },\n        React.createElement('p', { className: \"text-[13px] font-semibold text-[#252726]\" }, label)\n      ),\n      payload.map((entry, index) => (\n        React.createElement(\n          'div',\n          { key: index, className: \"flex items-center justify-between gap-4 py-1\" },\n          React.createElement('div', { className: \"flex items-center gap-2\" },\n            React.createElement('span', { \n              className: \"w-2.5 h-2.5 rounded-[2px]\", \n              style: { backgroundColor: entry.fill } \n            }),\n            React.createElement('span', { className: \"text-[13px] text-[#737373]\" }, config[entry.dataKey]?.label || entry.name)\n          ),\n          React.createElement('span', { className: \"text-[13px] font-bold text-[#252726] tabular-nums\" }, \n            new Intl.NumberFormat().format(entry.value)\n          )\n        )\n      ))\n    );\n  }\n  return null;\n};\n\nfunction IZOVerticalBarChart(props) {\n  const [isLoaded, setIsLoaded] = useState(false);\n\n  useEffect(() => {\n    if (!document.getElementById('izo-font-inter')) {\n      const link = document.createElement('link');\n      link.id = 'izo-font-inter';\n      link.rel = 'stylesheet';\n      link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';\n      document.head.appendChild(link);\n    }\n    if (!document.getElementById('izo-tw-v4')) {\n      const tw = document.createElement('script');\n      tw.id = 'izo-tw-v4';\n      tw.src = 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4';\n      tw.onload = () => setIsLoaded(true);\n      document.head.appendChild(tw);\n    } else {\n      setIsLoaded(true);\n    }\n  }, []);\n\n  const resolved = useMemo(() => {\n    const raw = props.data || {};\n    const series = raw.series || [];\n    const rawData = raw.data || [];\n    \n    // SUPPORTED PROPS FROM DATA OBJECT\n    const barSize = raw.barSize !== undefined ? raw.barSize : 36;\n    const barCategoryGap = raw.barCategoryGap !== undefined ? raw.barCategoryGap : \"-10%\";\n    const barGap = raw.barGap !== undefined ? raw.barGap : 8;\n    const tickCount = raw.tickCount !== undefined ? raw.tickCount : 5;\n    const chartHeight = raw.chartHeight !== undefined ? raw.chartHeight : 260; // Added chartHeight prop\n\n    const processedData = rawData.map(item => {\n      const cleanItem = { ...item };\n      series.forEach(s => { cleanItem[s.key] = Number(item[s.key]) || 0; });\n      return cleanItem;\n    });\n\n    const totals = {};\n    series.forEach((s) => { \n      totals[s.key] = processedData.reduce((sum, d) => sum + d[s.key], 0); \n    });\n\n    return {\n      data: processedData,\n      categoryKey: raw.categoryKey || \"week\",\n      series,\n      config: raw.config || {},\n      totals,\n      title: raw.title || \"\",\n      subtitle: raw.subtitle || \"\",\n      barSize,\n      barCategoryGap,\n      barGap,\n      tickCount,\n      chartHeight\n    };\n  }, [props.data]);\n\n  const { data, categoryKey, series, config, totals, title, subtitle, barSize, barCategoryGap, barGap, tickCount, chartHeight } = resolved;\n\n  if (!isLoaded) return null;\n\n  const { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } = Recharts;\n\n  return React.createElement(\n    'div',\n    { \n      style: { fontFamily: '\"Inter\", sans-serif' },\n      className: \"flex flex-col gap-6 p-6 bg-white w-full h-full overflow-hidden\" \n    },\n    \n    (title || subtitle) && React.createElement(\n      'div',\n      { className: \"flex flex-col gap-2.5\" },\n      title && React.createElement('h3', { className: \"text-base font-semibold text-[#252726]\" }, title),\n      subtitle && React.createElement('p', { className: \"text-xs text-[#252726]\" }, subtitle)\n    ),\n\n    React.createElement(\n      'div',\n      { className: \"flex flex-1 items-center gap-10 min-h-0 w-full\" },\n      \n      React.createElement(\n        'div',\n        { \n          className: \"flex-1 relative min-w-0\", \n          style: { height: `${chartHeight}px` } // Dynamically apply height\n        }, \n        React.createElement(\n          ResponsiveContainer,\n          { width: \"100%\", height: \"100%\" },\n          React.createElement(\n            BarChart,\n            { \n              data: data, \n              barGap: barGap, \n              barCategoryGap: barCategoryGap, \n              margin: { top: 10, right: 0, left:-15, bottom: 0 } \n            },\n            React.createElement(CartesianGrid, { vertical: false, stroke: \"#EEF2F7\", strokeDasharray: \"0\" }),\n            React.createElement(XAxis, { \n              dataKey: categoryKey, \n              tickLine: false, \n              axisLine: false, \n              tick: { fontSize: 13, fill: \"#737373\" },\n              tickMargin: 12\n            }),\n            React.createElement(YAxis, { \n              width: 60, \n              tickLine: false, \n              axisLine: false, \n              tick: { fontSize: 13, fill: \"#737373\" },\n              tickCount: tickCount \n            }),\n            React.createElement(Tooltip, {\n              content: (tProps) => React.createElement(CustomTooltip, { ...tProps, config }),\n              cursor: { fill: \"#EEF2F7\", opacity: 0.4 }\n            }),\n            series.map((s) => React.createElement(Bar, {\n              key: s.key,\n              dataKey: s.key,\n              fill: config[s.key]?.color || \"#2e8b57\",\n              radius: [4, 4, 4, 4],\n              barSize: barSize\n            }))\n          )\n        )\n      ),\n\n      React.createElement(\n        'div',\n        { className: \"flex flex-col gap-3 min-w-[120px]\" },\n        series.map((s) => React.createElement(\n          'div',\n          { key: s.key, className: \"flex items-center justify-between gap-3\" },\n          React.createElement('div', { className: \"flex items-center gap-2\" },\n            React.createElement('span', { \n              className: \"w-2.5 h-2.5 rounded-full\", \n              style: { backgroundColor: config[s.key]?.color } \n            }),\n            React.createElement('span', { className: \"text-sm font-medium text-[#737373]\" }, config[s.key]?.label || s.key)\n          ),\n          React.createElement('span', { className: \"text-sm font-bold text-[#737373]\" }, \n            totals[s.key]\n          )\n        ))\n      )\n    )\n  );\n}\n\nconst ConnectedComponent = Tooljet.connectComponent(IZOVerticalBarChart);\nif (!window.tooljetRoot) {\n  window.tooljetRoot = ReactDOM.createRoot(document.body);\n}\nwindow.tooljetRoot.render(React.createElement(ConnectedComponent));\n",
+                  "skipResolve": true
+                }
+              },
+              "general": {},
+              "styles": {
+                "visibility": {
+                  "value": "{{true}}"
+                },
+                "borderRadius": {
+                  "value": "{{6}}"
+                },
+                "borderColor": {
+                  "value": "var(--cc-weak-border)"
+                },
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-04T16:27:50.941Z",
+              "updatedAt": "2026-04-04T18:21:29.453Z",
+              "layouts": [
+                {
+                  "id": "8469758f-93a6-412a-8e2a-0edebc392e30",
+                  "type": "desktop",
+                  "top": 0,
+                  "left": 0,
+                  "width": 42,
+                  "height": 470,
+                  "componentId": "e1eeedad-ea2f-472a-8f39-e89f7fdb8e2d",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T19:20:15.839Z"
+                },
+                {
+                  "id": "e684c9c3-5f15-4375-bd32-c5bd0979ac74",
+                  "type": "mobile",
+                  "top": 0,
+                  "left": 0,
+                  "width": 43,
+                  "height": 470,
+                  "componentId": "e1eeedad-ea2f-472a-8f39-e89f7fdb8e2d",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T19:14:33.822Z"
+                }
+              ]
+            }
+          ],
+          "pages": [
+            {
+              "id": "822f59a4-1fd5-4193-b554-f27733ffcf4b",
+              "name": "Home",
+              "handle": "home",
+              "index": 1,
+              "disabled": null,
+              "hidden": null,
+              "icon": null,
+              "createdAt": "2026-04-04T16:27:25.763Z",
+              "updatedAt": "2026-04-04T19:11:29.814Z",
+              "autoComputeLayout": false,
+              "appVersionId": "5dd5c7d2-b337-41d1-baef-4445acdc024b",
+              "pageGroupIndex": 1,
+              "pageGroupId": null,
+              "isPageGroup": false,
+              "url": null,
+              "openIn": "new_tab",
+              "type": "default",
+              "appId": ""
+            }
+          ],
+          "events": [],
+          "dataQueries": [],
+          "dataSources": [],
+          "appVersions": [
+            {
+              "id": "5dd5c7d2-b337-41d1-baef-4445acdc024b",
+              "name": "v1",
+              "definition": null,
+              "globalSettings": {
+                "appInMaintenance": false,
+                "canvasMaxWidth": 100,
+                "canvasMaxWidthType": "%",
+                "canvasMaxHeight": 2400,
+                "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+                "backgroundFxQuery": "",
+                "appMode": "light"
+              },
+              "pageSettings": null,
+              "showViewerNavigation": false,
+              "homePageId": "822f59a4-1fd5-4193-b554-f27733ffcf4b",
+              "appId": "d5062a15-9ffd-4edf-992d-518333c51dc8",
+              "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "promotedFrom": null,
+              "parentVersionId": null,
+              "status": "DRAFT",
+              "description": null,
+              "publishedAt": null,
+              "releasedAt": null,
+              "createdAt": "2026-04-04T16:27:25.893Z",
+              "updatedAt": "2026-04-04T16:27:25.763Z"
+            }
+          ],
+          "appEnvironments": [
+            {
+              "id": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "development",
+              "isDefault": false,
+              "priority": 1,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.458Z",
+              "updatedAt": "2026-02-26T12:08:00.458Z"
+            },
+            {
+              "id": "0e3b990c-f866-4eed-9a29-550e8d0f0f91",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "staging",
+              "isDefault": false,
+              "priority": 2,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.460Z",
+              "updatedAt": "2026-02-26T12:08:00.460Z"
+            },
+            {
+              "id": "081b74ee-41da-45db-9dd7-01dc882dbec9",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "production",
+              "isDefault": true,
+              "priority": 3,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.462Z",
+              "updatedAt": "2026-02-26T12:08:00.462Z"
+            }
+          ],
+          "dataSourceOptions": [],
+          "schemaDetails": {
+            "multiPages": true,
+            "multiEnv": true,
+            "globalDataSources": true
+          }
+        }
+      }
+    }
+  ],
+  "tooljet_version": "3.20.140-ee-lts"
+}

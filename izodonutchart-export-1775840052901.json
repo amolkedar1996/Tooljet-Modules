@@ -1,0 +1,305 @@
+{
+  "app": [
+    {
+      "definition": {
+        "appV2": {
+          "id": "66d559ff-0fbe-4b47-84ad-bc11a8de0b0e",
+          "type": "module",
+          "name": "IZODonutChart",
+          "slug": "66d559ff-0fbe-4b47-84ad-bc11a8de0b0e",
+          "isPublic": null,
+          "isMaintenanceOn": false,
+          "icon": "layers",
+          "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+          "currentVersionId": null,
+          "userId": "b791d519-ed01-4ab0-a521-77404c914af7",
+          "workflowApiToken": null,
+          "workflowEnabled": false,
+          "isInitialisedFromPrompt": false,
+          "appGeneratedFromPrompt": false,
+          "appBuilderMode": "visual",
+          "aiGenerationMetadata": null,
+          "createdAt": "2026-04-04T20:47:03.243Z",
+          "creationMode": "DEFAULT",
+          "updatedAt": "2026-04-04T20:47:03.242Z",
+          "__loaded": true,
+          "editingVersion": {
+            "id": "19221df7-d271-440c-b0f0-ae5d1d229dab",
+            "name": "v1",
+            "definition": null,
+            "globalSettings": {
+              "appInMaintenance": false,
+              "canvasMaxWidth": 100,
+              "canvasMaxWidthType": "%",
+              "canvasMaxHeight": 2400,
+              "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+              "backgroundFxQuery": "",
+              "appMode": "light"
+            },
+            "pageSettings": null,
+            "showViewerNavigation": false,
+            "homePageId": "a47e817c-469a-4cac-85d1-bbf06c835022",
+            "appId": "66d559ff-0fbe-4b47-84ad-bc11a8de0b0e",
+            "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+            "promotedFrom": null,
+            "parentVersionId": null,
+            "status": "DRAFT",
+            "description": null,
+            "publishedAt": null,
+            "releasedAt": null,
+            "createdAt": "2026-04-04T20:47:03.369Z",
+            "updatedAt": "2026-04-04T20:47:03.242Z"
+          },
+          "components": [
+            {
+              "id": "1fb470c0-3f96-4b79-ad2c-31ba12cde955",
+              "name": "ModuleContainer",
+              "type": "ModuleContainer",
+              "pageId": "a47e817c-469a-4cac-85d1-bbf06c835022",
+              "parent": null,
+              "properties": {
+                "inputItems": {
+                  "value": [
+                    {
+                      "name": "chartData",
+                      "id": "af775cbf-2d73-4860-82cf-0efc7adaa634",
+                      "type": "data",
+                      "defaultValue": "{{{\n  \"title\": \"NBA Status\",\n  \"subtitle\": \"Overview of accepted, deferred, and dismissed recommendations.\",\n  \"total\": 850,\n  \"colors\": [\"#004B7D\", \"#93C1D9\", \"#A6CBE1\"],\n  \"data\": [\n    { name: \"Active\", count: 231 },\n      { name: \"Accepted\", count: 170 },\n      { name: \"Dismissed\", count: 56 },\n      { name: \"Defer\", count: 68 }\n  ]\n}}}",
+                      "testInputValue": ""
+                    },
+                    {
+                      "name": "input1",
+                      "id": "4acb892e-28c0-4123-9bc3-591173464c98",
+                      "type": "data",
+                      "defaultValue": "",
+                      "testInputValue": ""
+                    }
+                  ]
+                },
+                "outputItems": {
+                  "value": []
+                },
+                "visibility": {
+                  "value": "{{true}}"
+                }
+              },
+              "general": {},
+              "styles": {
+                "backgroundColor": {
+                  "value": "#fff"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-04T20:47:03.242Z",
+              "updatedAt": "2026-04-09T11:44:12.113Z",
+              "layouts": [
+                {
+                  "id": "9a2445d2-960f-4ea5-8abd-cd40b992d789",
+                  "type": "desktop",
+                  "top": 50,
+                  "left": 3,
+                  "width": 20,
+                  "height": 330,
+                  "componentId": "1fb470c0-3f96-4b79-ad2c-31ba12cde955",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T21:31:11.959Z"
+                },
+                {
+                  "id": "a32d7864-c6e7-4cb8-875e-d858998c22b4",
+                  "type": "mobile",
+                  "top": 50,
+                  "left": 3,
+                  "width": 38,
+                  "height": 400,
+                  "componentId": "1fb470c0-3f96-4b79-ad2c-31ba12cde955",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T20:47:03.242Z"
+                }
+              ]
+            },
+            {
+              "id": "8f1843bc-6516-46b4-9da8-9467f320c6fb",
+              "name": "donut-chart-container",
+              "type": "CustomComponent",
+              "pageId": "a47e817c-469a-4cac-85d1-bbf06c835022",
+              "parent": "1fb470c0-3f96-4b79-ad2c-31ba12cde955",
+              "properties": {
+                "visible": {
+                  "value": "{{true}}"
+                },
+                "data": {
+                  "value": "{{input.chartData}}"
+                },
+                "code": {
+                  "value": "import React, { useEffect, useState, useMemo } from 'https://esm.sh/react@18.2.0';\nimport ReactDOM from 'https://esm.sh/react-dom@18.2.0/client';\n\nfunction IZODonutChart(props) {\n  const [isLoaded, setIsLoaded] = useState(false);\n  const [tooltip, setTooltip] = useState({ show: false, x: 0, y: 0, name: '', count: 0 });\n\n  useEffect(() => {\n    const styleId = 'izo-nba-final-styles';\n    if (!document.getElementById(styleId)) {\n      const style = document.createElement('style');\n      style.id = styleId;\n      style.innerHTML = `\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');\n        html, body, #root { \n          height: 100% !important; \n          margin: 0; padding: 0; \n          overflow: hidden !important; \n          font-family: 'Inter', sans-serif; \n          background: white;\n        }\n        .legend-scroll::-webkit-scrollbar { width: 4px; }\n        .legend-scroll::-webkit-scrollbar-track { background: transparent; }\n        .legend-scroll::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 10px; }\n        \n        .izo-tooltip {\n          position: fixed;\n          pointer-events: none;\n          background: #1f2937;\n          color: white;\n          padding: 8px 12px;\n          border-radius: 6px;\n          font-size: 12px;\n          z-index: 9999;\n          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);\n          transform: translate(-50%, -120%);\n          transition: opacity 0.1s ease;\n          white-space: nowrap;\n        }\n      `;\n      document.head.appendChild(style);\n    }\n\n    if (!document.getElementById('tailwind-v4')) {\n      const script = document.createElement('script');\n      script.id = 'tailwind-v4';\n      script.src = 'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4';\n      script.onload = () => setIsLoaded(true);\n      document.head.appendChild(script);\n    } else {\n      setIsLoaded(true);\n    }\n  }, []);\n\n  const resolved = useMemo(() => {\n    const raw = props.data || {};\n    const list = raw.data || [\n      { name: \"Active\", count: 231 },\n      { name: \"Accepted\", count: 170 },\n      { name: \"Dismissed\", count: 56 },\n      { name: \"Defer\", count: 68 }\n    ];\n\n    const defaultColors = [\"#004B7D\", \"#93C1D9\", \"#A6CBE1\", \"#D9EBF5\"];\n    const colors = (raw.colors && Array.isArray(raw.colors)) ? raw.colors : defaultColors;\n    const total = raw.total || list.reduce((a, b) => a + b.count, 0);\n    \n    const dataSum = list.reduce((a, b) => a + b.count, 0);\n    let cumulativePercent = 0;\n    const segments = list.map((item, index) => {\n      const slicePercent = dataSum > 0 ? item.count / dataSum : 0;\n      const startX = Math.cos(2 * Math.PI * cumulativePercent);\n      const startY = Math.sin(2 * Math.PI * cumulativePercent);\n      cumulativePercent += slicePercent;\n      const endX = Math.cos(2 * Math.PI * cumulativePercent);\n      const endY = Math.sin(2 * Math.PI * cumulativePercent);\n\n      const largeArcFlag = slicePercent > 0.5 ? 1 : 0;\n      const pathData = [\n        `M ${startX} ${startY}`, \n        `A 1 1 0 ${largeArcFlag} 1 ${endX} ${endY}`,\n        `L 0 0`\n      ].join(' ');\n\n      return { ...item, path: pathData, color: colors[index % colors.length] };\n    });\n\n    return {\n      title: raw.title || \"NBA Status\",\n      subtitle: raw.subtitle || \"Overview of accepted, deferred, and dismissed recommendations.\",\n      total,\n      segments\n    };\n  }, [props.data]);\n\n  const handleShowTooltip = (e, item) => {\n    setTooltip({\n      show: true,\n      x: e.clientX,\n      y: e.clientY,\n      name: item.name,\n      count: item.count\n    });\n  };\n\n  const handleHideTooltip = () => setTooltip(prev => ({ ...prev, show: false }));\n\n  if (!isLoaded) return null;\n\n  const { title, subtitle, total, segments } = resolved;\n\n  return React.createElement(\n    'div',\n    { className: \"flex flex-col h-full w-full p-8 bg-white overflow-hidden\" },\n\n    // Shared Tooltip\n    tooltip.show && React.createElement(\n      'div',\n      { \n        className: \"izo-tooltip\",\n        style: { left: tooltip.x, top: tooltip.y }\n      },\n      React.createElement('div', { className: \"font-semibold\" }, tooltip.name),\n      React.createElement('div', { className: \"opacity-80 text-[11px] mt-0.5\" }, `Count: ${tooltip.count}`)\n    ),\n\n    // Header\n    React.createElement(\n      'div',\n      { className: \"mb-6 shrink-0\" },\n      React.createElement('h3', { className: \"text-[16px] font-medium text-[#252726] mb-1\" }, title),\n      React.createElement('p', { className: \"text-[14px] font-regular text-[#252726] opacity-80\" }, subtitle)\n    ),\n\n    // Content Layout\n    React.createElement(\n      'div',\n      { className: \"flex items-start gap-10 flex-1 min-h-0 overflow-hidden pt-2\" },\n      \n      // Donut Visual\n      React.createElement(\n        'div',\n        { className: \"relative w-[160px] h-[160px] shrink-0\" },\n        React.createElement(\n          'svg',\n          { viewBox: \"-1 -1 2 2\", className: \"w-full h-full -rotate-90\" },\n          segments.map((seg, i) => React.createElement('path', {\n            key: i,\n            d: seg.path,\n            fill: seg.color,\n            className: \"transition-opacity hover:opacity-90 cursor-pointer\",\n            onMouseEnter: (e) => handleShowTooltip(e, seg),\n            onMouseMove: (e) => handleShowTooltip(e, seg),\n            onMouseLeave: handleHideTooltip,\n            onClick: () => props.updateData({ selected: seg.name })\n          })),\n          React.createElement('circle', { r: \"0.75\", fill: \"white\" })\n        ),\n        React.createElement(\n          'div',\n          { className: \"absolute inset-0 flex flex-col items-center justify-center pointer-events-none text-center\" },\n          React.createElement('span', { className: \"text-[10px] font-semibold text-[#7C858C] tracking-wide\" }, \"Total NBAs\"),\n          React.createElement('span', { className: \"text-[24px] font-semibold text-[#7C858C] leading-none mt-1\" }, total)\n        )\n      ),\n\n      // Legend Section\n      React.createElement(\n        'div',\n        { className: \"legend-scroll flex flex-col gap-4 overflow-y-auto pr-2 flex-1 h-full min-h-0\" },\n        segments.map((item, index) => React.createElement(\n          'div',\n          { \n            key: index, \n            className: \"flex items-center group cursor-pointer shrink-0\",\n            onClick: () => props.updateData({ selected: item.name }),\n            onMouseEnter: (e) => handleShowTooltip(e, item),\n            onMouseMove: (e) => handleShowTooltip(e, item),\n            onMouseLeave: handleHideTooltip\n          },\n          \n          // Name Column\n          React.createElement(\n            'div',\n            { className: \"flex items-center gap-2.5 w-40 shrink-0 min-w-0\" },\n            React.createElement('span', { \n              className: \"w-2.5 h-2.5 rounded-full shrink-0\", \n              style: { backgroundColor: item.color } \n            }),\n            React.createElement('span', { \n              className: \"text-[14px] font-medium text-[#7C858C] truncate group-hover:text-[#252726]\"\n            }, item.name)\n          ),\n\n          // Count Column\n          React.createElement(\n            'span', \n            { className: \"text-[14px] font-semibold text-[#7C858C] w-12 tabular-nums ml-4 shrink-0\" }, \n            item.count\n          )\n        ))\n      )\n    )\n  );\n}\n\nconst ConnectedComponent = Tooljet.connectComponent(IZODonutChart);\nif (!window.tooljetRoot) {\n  window.tooljetRoot = ReactDOM.createRoot(document.body);\n}\nwindow.tooljetRoot.render(React.createElement(ConnectedComponent));",
+                  "skipResolve": true
+                }
+              },
+              "general": {},
+              "styles": {
+                "visibility": {
+                  "value": "{{true}}"
+                },
+                "borderRadius": {
+                  "value": "{{6}}"
+                },
+                "borderColor": {
+                  "value": "var(--cc-weak-border)"
+                },
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-04T20:47:15.952Z",
+              "updatedAt": "2026-04-05T08:00:40.686Z",
+              "layouts": [
+                {
+                  "id": "1f75eb3b-0083-41b4-89b6-154c40537d33",
+                  "type": "desktop",
+                  "top": 0,
+                  "left": 1,
+                  "width": 41,
+                  "height": 320,
+                  "componentId": "8f1843bc-6516-46b4-9da8-9467f320c6fb",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T21:31:09.846Z"
+                },
+                {
+                  "id": "4c3dd462-64a3-4060-a2f5-39494be1b7ee",
+                  "type": "mobile",
+                  "top": 30,
+                  "left": 4,
+                  "width": 23,
+                  "height": 140,
+                  "componentId": "8f1843bc-6516-46b4-9da8-9467f320c6fb",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-04T20:47:15.952Z"
+                }
+              ]
+            }
+          ],
+          "pages": [
+            {
+              "id": "a47e817c-469a-4cac-85d1-bbf06c835022",
+              "name": "Home",
+              "handle": "home",
+              "index": 1,
+              "disabled": null,
+              "hidden": null,
+              "icon": null,
+              "createdAt": "2026-04-04T20:47:03.242Z",
+              "updatedAt": "2026-04-04T20:47:04.291Z",
+              "autoComputeLayout": true,
+              "appVersionId": "19221df7-d271-440c-b0f0-ae5d1d229dab",
+              "pageGroupIndex": 1,
+              "pageGroupId": null,
+              "isPageGroup": false,
+              "url": null,
+              "openIn": "new_tab",
+              "type": "default",
+              "appId": ""
+            }
+          ],
+          "events": [],
+          "dataQueries": [],
+          "dataSources": [],
+          "appVersions": [
+            {
+              "id": "19221df7-d271-440c-b0f0-ae5d1d229dab",
+              "name": "v1",
+              "definition": null,
+              "globalSettings": {
+                "appInMaintenance": false,
+                "canvasMaxWidth": 100,
+                "canvasMaxWidthType": "%",
+                "canvasMaxHeight": 2400,
+                "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+                "backgroundFxQuery": "",
+                "appMode": "light"
+              },
+              "pageSettings": null,
+              "showViewerNavigation": false,
+              "homePageId": "a47e817c-469a-4cac-85d1-bbf06c835022",
+              "appId": "66d559ff-0fbe-4b47-84ad-bc11a8de0b0e",
+              "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "promotedFrom": null,
+              "parentVersionId": null,
+              "status": "DRAFT",
+              "description": null,
+              "publishedAt": null,
+              "releasedAt": null,
+              "createdAt": "2026-04-04T20:47:03.369Z",
+              "updatedAt": "2026-04-04T20:47:03.242Z"
+            }
+          ],
+          "appEnvironments": [
+            {
+              "id": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "development",
+              "isDefault": false,
+              "priority": 1,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.458Z",
+              "updatedAt": "2026-02-26T12:08:00.458Z"
+            },
+            {
+              "id": "0e3b990c-f866-4eed-9a29-550e8d0f0f91",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "staging",
+              "isDefault": false,
+              "priority": 2,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.460Z",
+              "updatedAt": "2026-02-26T12:08:00.460Z"
+            },
+            {
+              "id": "081b74ee-41da-45db-9dd7-01dc882dbec9",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "production",
+              "isDefault": true,
+              "priority": 3,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.462Z",
+              "updatedAt": "2026-02-26T12:08:00.462Z"
+            }
+          ],
+          "dataSourceOptions": [],
+          "schemaDetails": {
+            "multiPages": true,
+            "multiEnv": true,
+            "globalDataSources": true
+          }
+        }
+      }
+    }
+  ],
+  "tooljet_version": "3.20.140-ee-lts"
+}

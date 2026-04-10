@@ -1,0 +1,298 @@
+{
+  "app": [
+    {
+      "definition": {
+        "appV2": {
+          "id": "07518758-9151-479d-9b90-b9ebe1eff2bf",
+          "type": "module",
+          "name": "IZOConversationsList",
+          "slug": "07518758-9151-479d-9b90-b9ebe1eff2bf",
+          "isPublic": null,
+          "isMaintenanceOn": false,
+          "icon": "draghandle",
+          "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+          "currentVersionId": null,
+          "userId": "33b94c00-594b-41c0-9b85-7095b2717c70",
+          "workflowApiToken": null,
+          "workflowEnabled": false,
+          "isInitialisedFromPrompt": false,
+          "appGeneratedFromPrompt": false,
+          "appBuilderMode": "visual",
+          "aiGenerationMetadata": null,
+          "createdAt": "2026-04-07T14:58:20.846Z",
+          "creationMode": "DEFAULT",
+          "updatedAt": "2026-04-07T14:58:20.845Z",
+          "__loaded": true,
+          "editingVersion": {
+            "id": "80e0ae44-046b-4a57-a95c-c7e1aa797107",
+            "name": "v1",
+            "definition": null,
+            "globalSettings": {
+              "appInMaintenance": false,
+              "canvasMaxWidth": 100,
+              "canvasMaxWidthType": "%",
+              "canvasMaxHeight": 2400,
+              "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+              "backgroundFxQuery": "",
+              "appMode": "light"
+            },
+            "pageSettings": null,
+            "showViewerNavigation": false,
+            "homePageId": "7ae249ee-72d4-448d-839a-55d9d4ee8d34",
+            "appId": "07518758-9151-479d-9b90-b9ebe1eff2bf",
+            "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+            "promotedFrom": null,
+            "parentVersionId": null,
+            "status": "DRAFT",
+            "description": null,
+            "publishedAt": null,
+            "releasedAt": null,
+            "createdAt": "2026-04-07T14:58:21.062Z",
+            "updatedAt": "2026-04-07T14:58:20.845Z"
+          },
+          "components": [
+            {
+              "id": "ae01c8b3-bb19-4ee6-b5e0-783e463717fc",
+              "name": "ModuleContainer",
+              "type": "ModuleContainer",
+              "pageId": "7ae249ee-72d4-448d-839a-55d9d4ee8d34",
+              "parent": null,
+              "properties": {
+                "inputItems": {
+                  "value": [
+                    {
+                      "name": "conversationsData",
+                      "id": "0b1c070d-c1b6-49f6-92f9-3aa622373211",
+                      "type": "data",
+                      "defaultValue": "{{{\n  \"conversations\": [\n    {\n      \"conversation_id\": \"1\",\n      \"title\": \"Patient outcomes for PD-L1 inhibitor\",\n      \"type\": \"Video\",\n      \"date\": \"2025-08-28\",\n      \"duration_minutes\": 92,\n      \"speakers\": \"Sarah Chen (MSL), Marial Rodriguez (KOL)\",\n      \"category\": \"Scientific Exchange\",\n      \"conversation_start_time\": \"10:00\",\n      \"conversation_end_time\": \"11:32\",\n      \"note\": \"The KOL shared positive real-world outcomes with the PD-L1 inhibitor. Adherence challenges were noted.\"\n    },\n    {\n      \"conversation_id\": \"2\",\n      \"title\": \"Phase III Trial Update - Oncology\",\n      \"type\": \"Phone\",\n      \"date\": \"2025-08-23\",\n      \"duration_minutes\": 45,\n      \"speakers\": \"Sarah Chen (MSL), Dr. Amit Shah\",\n      \"category\": \"Clinical Discussion\",\n      \"conversation_start_time\": \"14:00\",\n      \"conversation_end_time\": \"14:45\",\n      \"note\": \"Reviewed primary endpoints. KOL requested subgroup data for elderly patients.\"\n    },\n    {\n      \"conversation_id\": \"3\",\n      \"title\": \"Adverse Event Follow-up\",\n      \"type\": \"Email\",\n      \"date\": \"2025-08-15\",\n      \"duration_minutes\": 0,\n      \"speakers\": \"Sarah Chen (MSL), Marial Rodriguez (KOL)\",\n      \"category\": \"Safety Update\",\n      \"conversation_start_time\": \"\",\n      \"conversation_end_time\": \"\",\n      \"note\": \"Email exchange regarding toxicity management.\"\n    },\n\n    {\n      \"conversation_id\": \"4\",\n      \"title\": \"KOL Engagement Strategy Discussion\",\n      \"type\": \"Video\",\n      \"date\": \"2025-08-10\",\n      \"duration_minutes\": 60,\n      \"speakers\": \"Sarah Chen (MSL), Dr. Rajesh Mehta\",\n      \"category\": \"Strategic Planning\",\n      \"conversation_start_time\": \"11:00\",\n      \"conversation_end_time\": \"12:00\",\n      \"note\": \"Discussed upcoming engagement strategies and key focus therapeutic areas.\"\n    },\n    {\n      \"conversation_id\": \"5\",\n      \"title\": \"New Drug Launch Preparation\",\n      \"type\": \"Phone\",\n      \"date\": \"2025-08-05\",\n      \"duration_minutes\": 35,\n      \"speakers\": \"Sarah Chen (MSL), Dr. Neha Kapoor\",\n      \"category\": \"Product Discussion\",\n      \"conversation_start_time\": \"16:00\",\n      \"conversation_end_time\": \"16:35\",\n      \"note\": \"Aligned on messaging strategy and key differentiators for upcoming launch.\"\n    }\n  ]\n}}}",
+                      "testInputValue": ""
+                    }
+                  ]
+                },
+                "outputItems": {
+                  "value": []
+                },
+                "visibility": {
+                  "value": "{{true}}"
+                }
+              },
+              "general": {},
+              "styles": {
+                "backgroundColor": {
+                  "value": "#fff"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-07T14:58:20.845Z",
+              "updatedAt": "2026-04-08T08:05:13.568Z",
+              "layouts": [
+                {
+                  "id": "8d5682a3-c870-4573-9261-b9a8e737ea77",
+                  "type": "mobile",
+                  "top": 50,
+                  "left": 3,
+                  "width": 38,
+                  "height": 400,
+                  "componentId": "ae01c8b3-bb19-4ee6-b5e0-783e463717fc",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-07T14:58:21.836Z"
+                },
+                {
+                  "id": "c74cddbd-3b81-4c53-a131-d8f29911f592",
+                  "type": "desktop",
+                  "top": 10,
+                  "left": 2,
+                  "width": 40,
+                  "height": 530,
+                  "componentId": "ae01c8b3-bb19-4ee6-b5e0-783e463717fc",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-07T15:05:01.333Z"
+                }
+              ]
+            },
+            {
+              "id": "30c8cb62-f4ee-4152-8719-0ad80d4db42c",
+              "name": "conversation-list-container",
+              "type": "CustomComponent",
+              "pageId": "7ae249ee-72d4-448d-839a-55d9d4ee8d34",
+              "parent": "ae01c8b3-bb19-4ee6-b5e0-783e463717fc",
+              "properties": {
+                "visible": {
+                  "value": "{{true}}"
+                },
+                "data": {
+                  "value": "{{input.conversationsData}}"
+                },
+                "code": {
+                  "value": "import React, { useEffect, useState, useMemo } from \"https://esm.sh/react@18.2.0\";\nimport ReactDOM from \"https://esm.sh/react-dom@18.2.0/client\";\nimport { Video, Phone, Mail, Users, ChevronRight } from \"https://esm.sh/lucide-react@0.284.0\";\n\n// Load Tailwind\nif (!document.getElementById(\"tailwind-v4\")) {\n  const script = document.createElement(\"script\");\n  script.id = \"tailwind-v4\";\n  script.src = \"https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4\";\n  document.head.appendChild(script);\n}\n\n// ICON (same logic)\nconst IconPicker = ({ type, active }) => {\n  const t = type?.toLowerCase() || \"\";\n  const color = active ? \"#1d7eb9\" : \"#7c858c\";\n\n  if (t.includes(\"video\")) return <Video size={20} color={color} />;\n  if (t.includes(\"phone\")) return <Phone size={20} color={color} />;\n  if (t.includes(\"email\")) return <Mail size={20} color={color} />;\n  return <Users size={20} color={color} />;\n};\n\nconst formatDate = (date) => {\n  if (!date) return \"-\";\n\n  const d = new Date(date);\n\n  return d.toLocaleDateString(\"en-US\", {\n    month: \"short\",\n    day: \"2-digit\",\n    year: \"numeric\",\n  });\n};\n\nfunction IZOConversationsList({ data }) {\n\n  // ✅ SAME DATA HANDLING (robust)\n  const safeData = useMemo(() => {\n    if (Array.isArray(data)) return data;\n    if (Array.isArray(data?.data)) return data.data;\n    if (Array.isArray(data?.conversations)) return data.conversations;\n    return [];\n  }, [data]);\n\n  const [selectedId, setSelectedId] = useState(null);\n\n  useEffect(() => {\n    if (safeData.length && !selectedId) {\n      setSelectedId(\n        safeData[0].conversation_id || safeData[0].id\n      );\n    }\n  }, [safeData]);\n\n  const selected = useMemo(() => {\n    return safeData.find(\n      (c) =>\n        (c.conversation_id || c.id) === selectedId\n    ) || safeData[0];\n  }, [safeData, selectedId]);\n\n  if (!safeData.length) {\n    return <div className=\"p-4\">No conversations</div>;\n  }\n\n  return (\n    <div className=\"grid grid-cols-[7fr_13fr] h-screen font-[Inter]\">\n\n      {/* SIDEBAR */}\n      <div className=\"flex flex-col overflow-auto\">\n        <div className=\"sticky top-0 z-10 px-3 pt-2 pb-1\">\n          <div className=\"text-[16px] font-semibold text-[#252726]\">\n            Previous Conversations\n          </div>\n        </div>\n\n        <div className=\"flex-1 overflow-y-auto pt-4 flex flex-col gap-2.5\">\n          {safeData.map((item) => {\n            const id = item.conversation_id || item.id;\n            const isActive = selectedId === id;\n\n            return (\n              <div\n                key={id}\n                onClick={() => setSelectedId(id)}\n                className={`w-full flex items-start justify-around p-2 cursor-pointer rounded-tl-lg rounded-bl-lg ${\n                  isActive ? \"bg-[#f6f8fa]\" : \"hover:bg-[#f6f8fa]/30\"\n                }`}\n              >\n                {/* ICON */}\n                <div\n                  className={`w-12 h-12 rounded-full flex items-center justify-center ${\n                    isActive ? \"bg-[#DAEFFA]\" : \"bg-[#f6f8fa]\"\n                  }`}\n                >\n                  <IconPicker type={item.type} active={isActive} />\n                </div>\n\n                {/* TEXT */}\n                <div className=\"flex flex-col gap-1.5 flex-1 px-3 min-w-0\">\n                  <div title={item.title} className=\"text-[14px] font-semibold text-[#535862] truncate\">\n                    {item.title}\n                  </div>\n\n                  <div className=\"flex gap-2 text-[12px] text-[#7c858c]\">\n                    <span>{formatDate(item.date)}</span>\n                    <span>|</span>\n                    <span>\n                      {item.duration ||\n                        `${Math.floor(item.duration_minutes / 60)}hr ${\n                          item.duration_minutes % 60\n                        } mins`}\n                    </span>\n                  </div>\n                </div>\n\n                <ChevronRight className=\"w-5 h-5 text-[#252726]\" />\n              </div>\n            );\n          })}\n        </div>\n      </div>\n\n      {/* CONTENT */}\n      {selected && (\n        <div className=\"bg-[#f6f8fa] rounded-lg p-6 overflow-auto\">\n\n          {/* HEADER */}\n          <div className=\"flex items-start gap-4 mb-6\">\n            <div className=\"bg-white p-3 rounded-full\">\n              <IconPicker type={selected.type} />\n            </div>\n\n            <div className=\"flex flex-col gap-3\">\n              <div className=\"text-[16px] font-semibold text-[#252726]\">\n                {selected.title}\n              </div>\n\n              <div className=\"flex gap-4 text-[12px] text-[#7c858c]\">\n                <span>\n                  Time:{\" \"}\n                  <b className=\"text-[#7C858C]\">\n \t\t\t{selected.duration ||\n                        `${Math.floor(selected.duration_minutes / 60)}hr ${\n                          selected.duration_minutes % 60\n                        } mins`}\n\n                  </b>\n                </span>\n                <span className=\"font-semibold\">\n                  {formatDate(selected.date)}\n                </span>\n              </div>\n\n              {selected.speakers && (\n                <div className=\"text-[12px] text-[#7c858c]\">\n                  Speakers:{\" \"}\n                  <b className=\"text-[#7C858C]\">\n                    {selected.speakers}\n                  </b>\n                </div>\n              )}\n            </div>\n          </div>\n\n          {/* META */}\n          <div className=\"grid grid-cols-3 gap-2 mb-4\">\n\n  \t    <div className=\"flex flex-col gap-2\">\n              <div className=\"text-[12px] font-semibold text-[#7c858c]\">\n                Category\n              </div>\n              <div className=\"text-[16px] font-medium text-[#535862]\">\n                {selected.category}\n              </div>\n            </div>\n\n            \n\n            <div className=\"flex flex-col gap-2\">\n              <div className=\"text-[12px] font-semibold text-[#7c858c]\">\n                Channel\n              </div>\n              <div className=\"text-[16px] font-medium text-[#535862]\">\n                {selected.type}\n              </div>\n            </div>\n          </div>\n\n          {/* DESCRIPTION */}\n          {selected.note && (\n            <div className=\"flex flex-col gap-2\">\n              <div className=\"text-[12px] font-semibold text-[#7c858c]\">\n                Description\n              </div>\n\n              <div className=\"space-y-4\">\n                {selected.note.split(\". \").map((sentence, i, arr) => (\n                  <div\n                    key={i}\n                    className=\"text-[16px] font-medium text-[#535862] leading-relaxed\"\n                  >\n                    {sentence}\n                    {i !== arr.length - 1 ? \".\" : \"\"}\n                  </div>\n                ))}\n              </div>\n            </div>\n          )}\n        </div>\n      )}\n    </div>\n  );\n}\n\n// ToolJet mount\nconst ConnectedComponent = Tooljet.connectComponent(IZOConversationsList);\n\nif (!window.tooljetRoot) {\n  window.tooljetRoot = ReactDOM.createRoot(document.body);\n}\n\nwindow.tooljetRoot.render(<ConnectedComponent />);",
+                  "skipResolve": true
+                }
+              },
+              "general": {},
+              "styles": {
+                "visibility": {
+                  "value": "{{true}}"
+                },
+                "borderRadius": {
+                  "value": "{{6}}"
+                },
+                "borderColor": {
+                  "value": "var(--cc-weak-border)"
+                },
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{false}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-07T14:58:37.939Z",
+              "updatedAt": "2026-04-07T15:16:46.671Z",
+              "layouts": [
+                {
+                  "id": "795a677c-637a-44f0-8672-290600518896",
+                  "type": "mobile",
+                  "top": 50,
+                  "left": 4,
+                  "width": 23,
+                  "height": 140,
+                  "componentId": "30c8cb62-f4ee-4152-8719-0ad80d4db42c",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-07T14:58:37.939Z"
+                },
+                {
+                  "id": "ef6b6868-f358-4a0e-b8b8-867e76ea7144",
+                  "type": "desktop",
+                  "top": 10,
+                  "left": 0,
+                  "width": 42,
+                  "height": 510,
+                  "componentId": "30c8cb62-f4ee-4152-8719-0ad80d4db42c",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-07T15:05:06.200Z"
+                }
+              ]
+            }
+          ],
+          "pages": [
+            {
+              "id": "7ae249ee-72d4-448d-839a-55d9d4ee8d34",
+              "name": "Home",
+              "handle": "home",
+              "index": 1,
+              "disabled": null,
+              "hidden": null,
+              "icon": null,
+              "createdAt": "2026-04-07T14:58:20.845Z",
+              "updatedAt": "2026-04-07T14:58:21.861Z",
+              "autoComputeLayout": true,
+              "appVersionId": "80e0ae44-046b-4a57-a95c-c7e1aa797107",
+              "pageGroupIndex": 1,
+              "pageGroupId": null,
+              "isPageGroup": false,
+              "url": null,
+              "openIn": "new_tab",
+              "type": "default",
+              "appId": ""
+            }
+          ],
+          "events": [],
+          "dataQueries": [],
+          "dataSources": [],
+          "appVersions": [
+            {
+              "id": "80e0ae44-046b-4a57-a95c-c7e1aa797107",
+              "name": "v1",
+              "definition": null,
+              "globalSettings": {
+                "appInMaintenance": false,
+                "canvasMaxWidth": 100,
+                "canvasMaxWidthType": "%",
+                "canvasMaxHeight": 2400,
+                "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+                "backgroundFxQuery": "",
+                "appMode": "light"
+              },
+              "pageSettings": null,
+              "showViewerNavigation": false,
+              "homePageId": "7ae249ee-72d4-448d-839a-55d9d4ee8d34",
+              "appId": "07518758-9151-479d-9b90-b9ebe1eff2bf",
+              "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "promotedFrom": null,
+              "parentVersionId": null,
+              "status": "DRAFT",
+              "description": null,
+              "publishedAt": null,
+              "releasedAt": null,
+              "createdAt": "2026-04-07T14:58:21.062Z",
+              "updatedAt": "2026-04-07T14:58:20.845Z"
+            }
+          ],
+          "appEnvironments": [
+            {
+              "id": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "development",
+              "isDefault": false,
+              "priority": 1,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.458Z",
+              "updatedAt": "2026-02-26T12:08:00.458Z"
+            },
+            {
+              "id": "0e3b990c-f866-4eed-9a29-550e8d0f0f91",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "staging",
+              "isDefault": false,
+              "priority": 2,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.460Z",
+              "updatedAt": "2026-02-26T12:08:00.460Z"
+            },
+            {
+              "id": "081b74ee-41da-45db-9dd7-01dc882dbec9",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "production",
+              "isDefault": true,
+              "priority": 3,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.462Z",
+              "updatedAt": "2026-02-26T12:08:00.462Z"
+            }
+          ],
+          "dataSourceOptions": [],
+          "schemaDetails": {
+            "multiPages": true,
+            "multiEnv": true,
+            "globalDataSources": true
+          }
+        }
+      }
+    }
+  ],
+  "tooljet_version": "3.20.140-ee-lts"
+}

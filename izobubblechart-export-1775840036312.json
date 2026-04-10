@@ -1,0 +1,298 @@
+{
+  "app": [
+    {
+      "definition": {
+        "appV2": {
+          "id": "3a863825-362e-455c-b3cb-e7c37ffbdcad",
+          "type": "module",
+          "name": "IZOBubbleChart",
+          "slug": "3a863825-362e-455c-b3cb-e7c37ffbdcad",
+          "isPublic": null,
+          "isMaintenanceOn": false,
+          "icon": "shield",
+          "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+          "currentVersionId": null,
+          "userId": "33b94c00-594b-41c0-9b85-7095b2717c70",
+          "workflowApiToken": null,
+          "workflowEnabled": false,
+          "isInitialisedFromPrompt": false,
+          "appGeneratedFromPrompt": false,
+          "appBuilderMode": "visual",
+          "aiGenerationMetadata": null,
+          "createdAt": "2026-04-05T06:56:41.517Z",
+          "creationMode": "DEFAULT",
+          "updatedAt": "2026-04-05T06:56:41.517Z",
+          "__loaded": true,
+          "editingVersion": {
+            "id": "ca79611a-fb99-4d0c-890b-b16f7b9d6d5a",
+            "name": "v1",
+            "definition": null,
+            "globalSettings": {
+              "appInMaintenance": false,
+              "canvasMaxWidth": 100,
+              "canvasMaxWidthType": "%",
+              "canvasMaxHeight": 2400,
+              "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+              "backgroundFxQuery": "",
+              "appMode": "light"
+            },
+            "pageSettings": null,
+            "showViewerNavigation": false,
+            "homePageId": "929c7925-c1ec-468a-8334-19b448566d28",
+            "appId": "3a863825-362e-455c-b3cb-e7c37ffbdcad",
+            "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+            "promotedFrom": null,
+            "parentVersionId": null,
+            "status": "DRAFT",
+            "description": null,
+            "publishedAt": null,
+            "releasedAt": null,
+            "createdAt": "2026-04-05T06:56:41.645Z",
+            "updatedAt": "2026-04-05T06:56:41.517Z"
+          },
+          "components": [
+            {
+              "id": "8d0d3ba2-d94e-4d1f-84c5-f19a2c2c9b63",
+              "name": "ModuleContainer",
+              "type": "ModuleContainer",
+              "pageId": "929c7925-c1ec-468a-8334-19b448566d28",
+              "parent": null,
+              "properties": {
+                "inputItems": {
+                  "value": [
+                    {
+                      "name": "chartData",
+                      "id": "932bd9c3-3627-4ae0-94c3-dfe4716ccc45",
+                      "type": "data",
+                      "defaultValue": "{{{\n  \"title\": \"Recent Themes\",\n  \"subtitle\": \"Tracking scientific queries.\",\n  \"color\": \"#BFE0EF\",\n  \"data\": [\n    { \"name\": \"Mechanism\", \"value\": 50 },\n    { \"name\": \"Clinical Data\", \"value\": 28 },\n    { \"name\": \"Adverse Events\", \"value\": 15 },\n    { \"name\": \"Market Access\", \"value\": 42 },\n    { \"name\": \"Future Pipeline\", \"value\": 20 },\n    { \"name\": \"Real World\", \"value\": 10 }\n  ]\n}}}",
+                      "testInputValue": ""
+                    }
+                  ]
+                },
+                "outputItems": {
+                  "value": []
+                },
+                "visibility": {
+                  "value": "{{true}}"
+                }
+              },
+              "general": {},
+              "styles": {
+                "backgroundColor": {
+                  "value": "#fff"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-05T06:56:41.517Z",
+              "updatedAt": "2026-04-09T07:59:10.086Z",
+              "layouts": [
+                {
+                  "id": "ea08d378-2f9b-4c24-9f71-0aa65edb0ab0",
+                  "type": "mobile",
+                  "top": 50,
+                  "left": 3,
+                  "width": 38,
+                  "height": 400,
+                  "componentId": "8d0d3ba2-d94e-4d1f-84c5-f19a2c2c9b63",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-05T06:56:42.535Z"
+                },
+                {
+                  "id": "3b314fd6-120a-47ae-a2ff-546634cdf0b4",
+                  "type": "desktop",
+                  "top": 50,
+                  "left": 3,
+                  "width": 23,
+                  "height": 370,
+                  "componentId": "8d0d3ba2-d94e-4d1f-84c5-f19a2c2c9b63",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-05T06:58:03.938Z"
+                }
+              ]
+            },
+            {
+              "id": "b182502f-f491-4cd2-bc7b-833b95b6dded",
+              "name": "bubble-chart-container",
+              "type": "CustomComponent",
+              "pageId": "929c7925-c1ec-468a-8334-19b448566d28",
+              "parent": "8d0d3ba2-d94e-4d1f-84c5-f19a2c2c9b63",
+              "properties": {
+                "visible": {
+                  "value": "{{true}}"
+                },
+                "data": {
+                  "value": "{{input.chartData}}"
+                },
+                "code": {
+                  "value": "import React, { useEffect, useState, useMemo, useRef } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n\nconst TEXT_MAIN = '#1f2937';\nconst TEXT_SUB = '#64748b';\nconst D_COLOR = '#BFE0EF';\n\nfunction IZOBubbleChart(props) {\n  const [isLoaded, setIsLoaded] = useState(false);\n  const [tooltip, setTooltip] = useState({ show: false, x: 0, y: 0, name: \"\", value: 0 });\n  const containerRef = useRef(null);\n\n  useEffect(() => {\n    const styleId = 'izo-header-sync-styles';\n    if (!document.getElementById(styleId)) {\n      const style = document.createElement('style');\n      style.id = styleId;\n      style.innerHTML = `\n        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');\n        html, body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: white; overflow: hidden; }\n        .chart-header-title { font-size: 16px; font-weight: 600; color: #374151; margin: 0; }\n        .chart-header-sub { font-size: 14px; font-weight: 400; color: #6b7280; margin: 0; }\n        .bubble-group { cursor: pointer; transition: transform 0.3s ease; }\n        .bubble-group:hover { transform: scale(1.02); }\n        .bubble-text { text-anchor: middle; dominant-baseline: central; pointer-events: none; }\n        .izo-tooltip {\n          position: fixed; background: #111827; color: #ffffff; border-radius: 4px;\n          padding: 6px 10px; pointer-events: none; z-index: 9999; font-size: 11px;\n        }\n      `;\n      document.head.appendChild(style);\n    }\n    setIsLoaded(true);\n  }, []);\n\n  const bubbles = useMemo(() => {\n    const raw = props.data || {};\n    const inputData = Array.isArray(raw.data) ? raw.data : [];\n    const baseColor = raw.color || D_COLOR;\n    const midColor = baseColor + 'B2';\n    const lowColor = baseColor + '80';\n    const maxValue = Math.max(...inputData.map(d => d.value || 0), 1);\n\n    const getRadius = (val) => {\n      const minR = 32; \n      const maxR = 80; \n      const normalized = Math.sqrt(val / maxValue); \n      return Math.max(minR, normalized * maxR);\n    };\n\n    let computed = [\n      { x: 150, y: 130, color: baseColor }, // ✅ Y-coordinates shifted up to reduce gap\n      { x: 300, y: 140, color: midColor }, \n      { x: 440, y: 100, color: midColor }, \n      { x: 560, y: 110, color: midColor }, \n      { x: 570, y: 220, color: midColor }, \n      { x: 450, y: 240, color: lowColor }  \n    ].map((config, i) => {\n      const dataItem = inputData[i] || {};\n      const val = dataItem.value || 0;\n      const r = getRadius(val);\n      \n      const titleSize = Math.max(10, Math.min(15, (r / 80) * 15));\n      const countSize = Math.max(8.5, Math.min(11, (r / 80) * 11));\n      const BASE_GAP = 4;\n      const dynamicGap = Math.max(BASE_GAP, (r / 80) * 10); \n      \n      const titleDy = -(dynamicGap / 2);\n      const countDy = (dynamicGap / 2) + (countSize / 1.2);\n\n      return {\n        ...config,\n        r,\n        fullName: dataItem.name || \"\",\n        displayName: dataItem.name || \"\",\n        titleSize,\n        countSize,\n        titleDy,\n        countDy,\n        value: val\n      };\n    });\n\n    const padding = 22; \n    for (let iter = 0; iter < 100; iter++) {\n      for (let i = 0; i < computed.length; i++) {\n        for (let j = i + 1; j < computed.length; j++) {\n          const b1 = computed[i];\n          const b2 = computed[j];\n          const dx = b2.x - b1.x;\n          const dy = b2.y - b1.y;\n          const dist = Math.sqrt(dx * dx + dy * dy);\n          const minDist = b1.r + b2.r + padding;\n          if (dist < minDist) {\n            const angle = Math.atan2(dy, dx);\n            const force = (minDist - dist) / 2;\n            b1.x -= Math.cos(angle) * force;\n            b1.y -= Math.sin(angle) * force;\n            b2.x += Math.cos(angle) * force;\n            b2.y += Math.sin(angle) * force;\n          }\n        }\n      }\n    }\n    return computed;\n  }, [props.data]);\n\n  return React.createElement(\n    'div',\n    { className: \"flex flex-col h-full w-full bg-white overflow-hidden\", ref: containerRef },\n\n    tooltip.show && React.createElement('div', {\n      className: \"izo-tooltip\",\n      style: { left: tooltip.x, top: tooltip.y }\n    },\n      React.createElement('div', { style: { fontWeight: 700 } }, tooltip.name),\n      React.createElement('div', null, `${tooltip.value}`)\n    ),\n\n    // ✅ Header marginBottom reduced from 4px to 0px\n    React.createElement('div', { style: { padding: '36px 36px 0px 36px' } },\n      React.createElement('h3', { className: \"chart-header-title\" }, props.data?.title || \"Recent Themes\"),\n      React.createElement('p', { className: \"chart-header-sub\", style: { marginTop: '8px' } }, props.data?.subtitle || \"Tracking scientific queries.\")\n    ),\n\n    React.createElement(\n      'svg',\n      {\n        viewBox: \"0 0 750 360\", // ✅ Height reduced to clip excess bottom space\n        className: \"w-full h-full flex-1\",\n        onMouseLeave: () => setTooltip({ ...tooltip, show: false }),\n        style: { marginTop: '-10px' } // ✅ Negative margin to pull SVG closer to subtitle\n      },\n\n      bubbles.map((item, i) => (\n        React.createElement(\n          'g',\n          {\n            key: i,\n            className: \"bubble-group\",\n            onMouseMove: (e) => setTooltip({ show: true, x: e.clientX + 10, y: e.clientY - 30, name: item.fullName, value: item.value }),\n            onMouseLeave: () => setTooltip({ ...tooltip, show: false })\n          },\n\n          React.createElement('circle', { cx: item.x, cy: item.y, r: item.r, fill: item.color }),\n\n          React.createElement('text', {\n            x: item.x, y: item.y, dy: `${item.titleDy}px`,\n            className: \"bubble-text\",\n            style: { fontSize: `${item.titleSize}px`, fontWeight: 700, fill: TEXT_MAIN }\n          }, item.displayName),\n\n          React.createElement('text', {\n            x: item.x, y: item.y, dy: `${item.countDy}px`,\n            className: \"bubble-text\",\n            style: { fontSize: `${item.countSize}px`, fontWeight: 500, fill: TEXT_SUB }\n          }, `${item.value} Mentions`)\n        )\n      ))\n    )\n  );\n}\n\nconst ConnectedComponent = Tooljet.connectComponent(IZOBubbleChart);\nif (!window.tooljetRoot) window.tooljetRoot = ReactDOM.createRoot(document.body);\nwindow.tooljetRoot.render(React.createElement(ConnectedComponent));",
+                  "skipResolve": true
+                }
+              },
+              "general": {},
+              "styles": {
+                "visibility": {
+                  "value": "{{true}}"
+                },
+                "borderRadius": {
+                  "value": "{{6}}"
+                },
+                "borderColor": {
+                  "value": "var(--cc-weak-border)"
+                },
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "generalStyles": {
+                "boxShadow": {
+                  "value": "0px 0px 0px 0px #00000040"
+                }
+              },
+              "displayPreferences": {
+                "showOnDesktop": {
+                  "value": "{{true}}"
+                },
+                "showOnMobile": {
+                  "value": "{{true}}"
+                }
+              },
+              "validation": {},
+              "createdAt": "2026-04-05T06:57:03.877Z",
+              "updatedAt": "2026-04-09T08:16:35.901Z",
+              "layouts": [
+                {
+                  "id": "c11dde85-a190-433e-a7b3-e3d96d5d3788",
+                  "type": "desktop",
+                  "top": 10,
+                  "left": 1,
+                  "width": 41,
+                  "height": 350,
+                  "componentId": "b182502f-f491-4cd2-bc7b-833b95b6dded",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-05T07:21:43.621Z"
+                },
+                {
+                  "id": "13e4ad5d-7d49-43ae-92ab-42b3e9f0f94f",
+                  "type": "mobile",
+                  "top": 100,
+                  "left": 15,
+                  "width": 23,
+                  "height": 140,
+                  "componentId": "b182502f-f491-4cd2-bc7b-833b95b6dded",
+                  "dimensionUnit": "count",
+                  "updatedAt": "2026-04-05T06:57:03.877Z"
+                }
+              ]
+            }
+          ],
+          "pages": [
+            {
+              "id": "929c7925-c1ec-468a-8334-19b448566d28",
+              "name": "Home",
+              "handle": "home",
+              "index": 1,
+              "disabled": null,
+              "hidden": null,
+              "icon": null,
+              "createdAt": "2026-04-05T06:56:41.517Z",
+              "updatedAt": "2026-04-05T06:56:42.528Z",
+              "autoComputeLayout": true,
+              "appVersionId": "ca79611a-fb99-4d0c-890b-b16f7b9d6d5a",
+              "pageGroupIndex": 1,
+              "pageGroupId": null,
+              "isPageGroup": false,
+              "url": null,
+              "openIn": "new_tab",
+              "type": "default",
+              "appId": ""
+            }
+          ],
+          "events": [],
+          "dataQueries": [],
+          "dataSources": [],
+          "appVersions": [
+            {
+              "id": "ca79611a-fb99-4d0c-890b-b16f7b9d6d5a",
+              "name": "v1",
+              "definition": null,
+              "globalSettings": {
+                "appInMaintenance": false,
+                "canvasMaxWidth": 100,
+                "canvasMaxWidthType": "%",
+                "canvasMaxHeight": 2400,
+                "canvasBackgroundColor": "var(--cc-appBackground-surface)",
+                "backgroundFxQuery": "",
+                "appMode": "light"
+              },
+              "pageSettings": null,
+              "showViewerNavigation": false,
+              "homePageId": "929c7925-c1ec-468a-8334-19b448566d28",
+              "appId": "3a863825-362e-455c-b3cb-e7c37ffbdcad",
+              "currentEnvironmentId": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "promotedFrom": null,
+              "parentVersionId": null,
+              "status": "DRAFT",
+              "description": null,
+              "publishedAt": null,
+              "releasedAt": null,
+              "createdAt": "2026-04-05T06:56:41.645Z",
+              "updatedAt": "2026-04-05T06:56:41.517Z"
+            }
+          ],
+          "appEnvironments": [
+            {
+              "id": "35d8905d-0ab9-4f6c-a9a6-f98870bca428",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "development",
+              "isDefault": false,
+              "priority": 1,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.458Z",
+              "updatedAt": "2026-02-26T12:08:00.458Z"
+            },
+            {
+              "id": "0e3b990c-f866-4eed-9a29-550e8d0f0f91",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "staging",
+              "isDefault": false,
+              "priority": 2,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.460Z",
+              "updatedAt": "2026-02-26T12:08:00.460Z"
+            },
+            {
+              "id": "081b74ee-41da-45db-9dd7-01dc882dbec9",
+              "organizationId": "f915b7e4-3faa-47b6-af97-8c380656606b",
+              "name": "production",
+              "isDefault": true,
+              "priority": 3,
+              "enabled": true,
+              "createdAt": "2026-02-26T12:08:00.462Z",
+              "updatedAt": "2026-02-26T12:08:00.462Z"
+            }
+          ],
+          "dataSourceOptions": [],
+          "schemaDetails": {
+            "multiPages": true,
+            "multiEnv": true,
+            "globalDataSources": true
+          }
+        }
+      }
+    }
+  ],
+  "tooljet_version": "3.20.140-ee-lts"
+}
